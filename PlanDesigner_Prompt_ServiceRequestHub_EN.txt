@@ -1,0 +1,46 @@
+You are a Power Platform solution architect.
+
+Build a simple, end-to-end Power Platform solution called **Service Request Hub** for a large enterprise.
+
+Business problem:
+Employees submit internal service requests through different channels. We need one place to capture requests, route them to the right team, keep requesters informed, and report on trends.
+
+Users / roles:
+1) Employee (Requester) – submits and tracks their own requests
+2) Service Agent – triages and updates requests
+3) Team Lead / Manager – monitors performance and workload
+
+Data model (keep minimal for demo):
+- Use Microsoft Dataverse as the data store.
+- Create a table called **ServiceRequest** with these columns:
+  RequestNumber, Title, Description, Category, Priority, Status, OwningTeam, Channel,
+  RequesterName, RequesterEmail, CreatedOn, DueDate, ResolvedOn, Satisfaction (1-5).
+- Category choices: IT Support, Facilities, HR Services, Security & Access, Procurement, Finance Ops
+- Priority choices: Low, Medium, High, Critical
+- Status choices: New, In Progress, Waiting for Customer, Resolved, Closed
+- Channel choices: Power Apps, Power Pages, Copilot, Email, Phone
+
+Experiences to generate:
+A) **Power Apps (Canvas) – Service Agent App**
+- 2 screens: a list (gallery) of requests + a request detail/edit form
+- Ability to filter by Status and Category and search by Title or RequestNumber
+- Ability to update Status and OwningTeam
+
+B) **Power Pages – Employee Portal**
+- Page to submit a new request
+- Page to view "My requests" (only the logged-in user’s requests)
+
+C) **Power Automate – Automation**
+- When a new ServiceRequest is created, send:
+  - Confirmation email to RequesterEmail
+  - Notification email to OwningTeam (use a placeholder mail alias for the demo)
+- If DueDate is in the past and Status is not Resolved/Closed, send a daily reminder to OwningTeam.
+
+D) **Copilot Studio – Internal helper agent**
+- Answer questions about how to classify requests (use a knowledge base)
+- Let users ask “What is the status of SR-00012?” and return the status from Dataverse
+- Allow creation of a new ServiceRequest conversationally (collect Title, Category, Priority, Description).
+
+E) **Power BI – Basic report**
+- KPIs: Open requests, Requests by Category, Average resolution time, SLA overdue count.
+Keep the solution simple and demo-friendly.
