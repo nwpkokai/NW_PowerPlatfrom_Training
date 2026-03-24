@@ -1,9 +1,7 @@
-# NW_PowerPlatfrom_Training
-Training materials for Microsoft Power Platform sessions including Power Apps, Power Automate, and Copilot Studio exercises and starter files.
-
 # Power Platform Training Materials
 
 Welcome to the training repository.
+Here you can find training materials for Microsoft Power Platform sessions including Power Apps, Power Automate, and Copilot Studio exercises and starter files.
 
 ## 📁 Contents
 
