@@ -1,0 +1,111 @@
+# Power Apps – Training Materials
+
+This folder contains all resources required for the Power Apps training exercises.
+The goal is to help participants focus on **application building and logic**, without spending excessive time on initial data setup.
+
+---
+
+## 📦 Included files
+
+### 🧩 Database modelling template
+
+* Contains the **data model structure** required for the application
+* Includes:
+
+  * Entities (tables)
+  * Fields and relationships
+  * Sample data for testing
+* Helps you understand how the application data layer is designed before building the app
+
+📄 File:
+`Data_Modeling_training_Database_preparation_template.xlsx`
+
+---
+
+### 🗄️ Nextwit Training Database (Solution)
+
+* A ready-to-import **Power Platform solution**
+* Contains the **pre-built data structure** from the template
+* Allows you to skip manual setup and start building immediately
+
+📦 File:
+`Nextwit_TrainingDatabase_1_0_0_2.zip`
+
+---
+
+## 🚀 How to use
+
+### Option 1 – Guided learning (recommended)
+
+1. Open the **database modelling template**
+2. Review:
+
+   * Tables
+   * Relationships
+   * Business logic behind the structure
+3. Try to recreate parts of the model manually
+
+👉 This helps you understand *why* the app works, not just *how*
+
+---
+
+### Option 2 – Fast track
+
+1. Import the provided **solution (.zip)** into Power Platform
+2. Use the pre-configured data model
+3. Focus on:
+
+   * UI design
+   * App logic
+   * User experience
+
+👉 Recommended if your goal is rapid prototyping
+
+---
+
+## 💡 Training mindset
+
+This training is designed to simulate a **real-world scenario**.
+
+* You are not just building screens
+* You are designing a **data-driven application**
+
+Think about:
+
+* What data is really needed?
+* How entities relate to each other?
+* What makes the app scalable and maintainable?
+
+---
+
+## 🧠 Pro tips
+
+* Don’t rush into building screens — **understand the data first**
+* A good data model = easier app development
+* Use sample data to test real user scenarios
+* If something feels complex in the app, it’s often a data design issue
+
+---
+
+## 📥 Importing the solution
+
+1. Go to Power Apps / Power Platform
+2. Navigate to **Solutions**
+3. Click **Import solution**
+4. Upload:
+   `Nextwit_TrainingDatabase_1_0_0_2.zip`
+5. Follow the import steps
+
+---
+
+## 🎯 Goal of this module
+
+By the end of this exercise you will:
+
+* Understand basic data modelling in Power Platform
+* Work with structured data in Power Apps
+* Build apps on top of a realistic data model
+
+---
+
+Happy building! 🚀
